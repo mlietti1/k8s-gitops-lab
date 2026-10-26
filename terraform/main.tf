@@ -15,8 +15,5 @@ resource "kind_cluster" "this" {
       role = "worker"
     }
 
-    node {
-      role = "worker"
-    }
   }
 }
