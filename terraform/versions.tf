@@ -6,5 +6,9 @@ terraform {
       source  = "tehcyx/kind"
       version = "~> 0.6"
     }
+    helm = {
+      source  = "hashicorp/helm"
+      version = "~> 2.17"
+    }
   }
 }

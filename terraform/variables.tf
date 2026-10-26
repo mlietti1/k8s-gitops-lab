@@ -3,3 +3,8 @@ variable "cluster_name" {
   type        = string
   default     = "gitops-lab"
 }
+
+variable "argocd_chart_version" {
+  description = "Version of the argo-cd Helm chart"
+  type        = string
+}
