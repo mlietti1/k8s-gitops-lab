@@ -1,0 +1,16 @@
+# Tuned for a local kind cluster.
+
+# kind runs these control-plane components bound to localhost, so Prometheus
+# can't scrape them and they'd show up as permanently "down" targets.
+kubeEtcd:
+  enabled: false
+kubeControllerManager:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeProxy:
+  enabled: false
+
+prometheus:
+  prometheusSpec:
+    retention: 24h
