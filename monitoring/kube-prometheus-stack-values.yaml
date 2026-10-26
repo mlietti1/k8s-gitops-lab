@@ -13,4 +13,4 @@ kubeProxy:
 
 prometheus:
   prometheusSpec:
-    retention: 24h
+    retention: 48h
