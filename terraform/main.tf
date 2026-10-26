@@ -11,9 +11,11 @@ resource "kind_cluster" "this" {
       role = "control-plane"
     }
 
-    node {
-      role = "worker"
+    dynamic "node" {
+      for_each = range(var.worker_count)
+      content {
+        role = "worker"
+      }
     }
-
   }
 }
