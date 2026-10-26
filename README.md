@@ -45,8 +45,8 @@ and 1 worker. With more RAM, raise `worker_count`.
 ## Quick start
 
 ```bash
-git clone https://github.com/<GITHUB_USER>/<REPO>.git
-cd <REPO>/terraform
+git clone https://github.com/mlietti1/k8s-gitops-lab.git
+cd k8s-gitops-lab/terraform
 
 # Look up the current chart version and set it in terraform.tfvars
 terraform init
